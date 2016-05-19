@@ -3,6 +3,7 @@ A project to create a controlled indoor growing environment using embedded syste
 
 Our plan is to build a www.eee.manchester.ac.uk  prototype version of the MIT OpenAgri "Food Computer" with an idea to scaling the design out in the future. 
 
+
 ####Please see our Github Wiki for all information on the project
 
 Code and hardware are forked from https://github.com/OpenAgInitiative

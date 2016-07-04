@@ -1,7 +1,7 @@
 #include "pin_definitions.h"
 #include "COZIR_CO2.h"
 #include "Relays.h"
-#include "Wire.h" //from https://github.com/arduino/Arduino/tree/master/hardware/arduino/avr/libraries/Wire
+#include <Wire.h> //standard library
 #include "DHT.h" //from https://github.com/adafruit/DHT-sensor-library
 #include "OneWire.h" //from https://github.com/PaulStoffregen/OneWire
 #include "DallasTemperature.h" //from https://github.com/milesburton/Arduino-Temperature-Control-Library

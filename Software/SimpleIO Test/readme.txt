@@ -13,6 +13,7 @@ To run the GUI:
 -Install pySerial
 -run main.py
 -optional: install pyCharm
+-if run on raspberryPi: change the COM5 into /dev/ttyACM0
 
 Sensors used:
 (software uart) http://www.co2meter.com/products/cozir-0-2-co2-sensor

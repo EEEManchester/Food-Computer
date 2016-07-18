@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>605</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1024</width>
+    <height>605</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1024</width>
+    <height>605</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Food Computer MQTT Test</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>leaf.png</normaloff>leaf.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>280</y>
+      <width>1021</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>Relays (Publish)</string>
+       </property>
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>19</y>
+          <width>321</width>
+          <height>257</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="4" column="0">
+          <widget class="QPushButton" name="pushButton_5">
+           <property name="text">
+            <string>Relay 3 ON</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QPushButton" name="pushButton_14">
+           <property name="text">
+            <string>Relay 7 OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>Relay 1 OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QPushButton" name="pushButton_8">
+           <property name="text">
+            <string>Relay 4 OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_1">
+           <property name="text">
+            <string>Relay 1 ON</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QPushButton" name="pushButton_11">
+           <property name="text">
+            <string>Relay 6 ON</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="text">
+            <string>Relay 3 OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QPushButton" name="pushButton_13">
+           <property name="text">
+            <string>Relay 7 ON</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="text">
+            <string>Relay 2 ON</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QPushButton" name="pushButton_9">
+           <property name="text">
+            <string>Relay 5 ON</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="text">
+            <string>Relay 2 OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QPushButton" name="pushButton_15">
+           <property name="text">
+            <string>Relay 8 ON</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QPushButton" name="pushButton_7">
+           <property name="text">
+            <string>Relay 4 ON</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QPushButton" name="pushButton_12">
+           <property name="text">
+            <string>Relay 6 OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QPushButton" name="pushButton_10">
+           <property name="text">
+            <string>Relay 5 OFF</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QPushButton" name="pushButton_16">
+           <property name="text">
+            <string>Relay 8 OFF</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="title">
+        <string>MQTT for Buttons and Sensors</string>
+       </property>
+       <widget class="QWidget" name="formLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>19</y>
+          <width>321</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_2">
+         <property name="fieldGrowthPolicy">
+          <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>MQTT Broker's IP</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="lineEdit_1">
+           <property name="text">
+            <string>192.168.1.4</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>MQTT Broker's Port</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="lineEdit_2">
+           <property name="text">
+            <string>1884</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_3">
+           <property name="text">
+            <string>/food_computer_1/controls</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>Subcribe Topic (Sensors)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="lineEdit_4">
+           <property name="text">
+            <string>/food_computer_1/sensors</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>Publish Topic (Buttons)</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>129</y>
+          <width>321</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="1" column="0">
+          <widget class="QPushButton" name="pushButton_17">
+           <property name="text">
+            <string>Connect and Subscribe</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton_18">
+           <property name="text">
+            <string>Reconnect</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="title">
+        <string>Sensors (Subscribed)</string>
+       </property>
+       <widget class="QWidget" name="formLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>9</x>
+          <y>19</y>
+          <width>321</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout">
+         <property name="fieldGrowthPolicy">
+          <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Air CO2</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QProgressBar" name="progressBar_1">
+           <property name="value">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Air Humidity</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QProgressBar" name="progressBar_2">
+           <property name="value">
+            <number>20</number>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Air Temp</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QProgressBar" name="progressBar_3">
+           <property name="value">
+            <number>30</number>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Water Temp</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QProgressBar" name="progressBar_4">
+           <property name="value">
+            <number>40</number>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Water EC</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QProgressBar" name="progressBar_5">
+           <property name="value">
+            <number>50</number>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Water pH</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QProgressBar" name="progressBar_6">
+           <property name="value">
+            <number>60</number>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>Light Lux</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QProgressBar" name="progressBar_7">
+           <property name="value">
+            <number>70</number>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>Window Switch</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QProgressBar" name="progressBar_8">
+           <property name="value">
+            <number>80</number>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>Shell Switch</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QProgressBar" name="progressBar_9">
+           <property name="value">
+            <number>90</number>
+           </property>
+           <property name="textVisible">
+            <bool>true</bool>
+           </property>
+           <property name="invertedAppearance">
+            <bool>false</bool>
+           </property>
+           <property name="format">
+            <string>%p%</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>9</y>
+      <width>1011</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>MQTT Broker Test</string>
+    </property>
+    <widget class="QWidget" name="formLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>19</y>
+       <width>991</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_3">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_14">
+        <property name="text">
+         <string>MQTT Broker's IP</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_15">
+        <property name="text">
+         <string>MQTT Broker's Port</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>Subscribing Topic</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>Publishing Topic</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>Received Payload</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_19">
+        <property name="text">
+         <string>Payload to Publish</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_5">
+        <property name="text">
+         <string>192.168.1.4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_6">
+        <property name="text">
+         <string>1884</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_7">
+        <property name="text">
+         <string>/topic</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_8">
+        <property name="text">
+         <string>/topic</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineEdit_9"/>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lineEdit_10">
+        <property name="text">
+         <string>Hello World</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>9</x>
+       <y>189</y>
+       <width>991</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="1" column="2">
+       <widget class="QPushButton" name="pushButton_21">
+        <property name="text">
+         <string>Reconnect</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pushButton_19">
+        <property name="text">
+         <string>Connect</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="pushButton_24">
+        <property name="text">
+         <string>Unsubscribe</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="pushButton_22">
+        <property name="text">
+         <string>Publish</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QPushButton" name="pushButton_20">
+        <property name="text">
+         <string>Disconnect</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QPushButton" name="pushButton_23">
+        <property name="text">
+         <string>Subscribe</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1024</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>lineEdit_5</tabstop>
+  <tabstop>lineEdit_6</tabstop>
+  <tabstop>lineEdit_7</tabstop>
+  <tabstop>lineEdit_8</tabstop>
+  <tabstop>lineEdit_9</tabstop>
+  <tabstop>lineEdit_10</tabstop>
+  <tabstop>pushButton_19</tabstop>
+  <tabstop>pushButton_20</tabstop>
+  <tabstop>pushButton_21</tabstop>
+  <tabstop>pushButton_22</tabstop>
+  <tabstop>pushButton_23</tabstop>
+  <tabstop>pushButton_24</tabstop>
+  <tabstop>pushButton_1</tabstop>
+  <tabstop>pushButton_2</tabstop>
+  <tabstop>pushButton_3</tabstop>
+  <tabstop>pushButton_4</tabstop>
+  <tabstop>pushButton_5</tabstop>
+  <tabstop>pushButton_6</tabstop>
+  <tabstop>pushButton_7</tabstop>
+  <tabstop>pushButton_8</tabstop>
+  <tabstop>pushButton_9</tabstop>
+  <tabstop>pushButton_10</tabstop>
+  <tabstop>pushButton_11</tabstop>
+  <tabstop>pushButton_12</tabstop>
+  <tabstop>pushButton_13</tabstop>
+  <tabstop>pushButton_14</tabstop>
+  <tabstop>pushButton_15</tabstop>
+  <tabstop>pushButton_16</tabstop>
+  <tabstop>lineEdit_1</tabstop>
+  <tabstop>lineEdit_2</tabstop>
+  <tabstop>lineEdit_3</tabstop>
+  <tabstop>lineEdit_4</tabstop>
+  <tabstop>pushButton_17</tabstop>
+  <tabstop>pushButton_18</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

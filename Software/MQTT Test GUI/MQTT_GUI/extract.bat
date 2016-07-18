@@ -1,0 +1,1 @@
+C:\Python34\Lib\site-packages\PyQt4\pyuic4.bat -x MQTT_UI.ui -o MQTT_UI.py

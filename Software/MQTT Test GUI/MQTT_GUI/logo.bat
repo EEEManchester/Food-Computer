@@ -1,0 +1,1 @@
+pngcrush -ow -rem allb -reduce leaf.png

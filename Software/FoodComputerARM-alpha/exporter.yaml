@@ -1,0 +1,5 @@
+project_generator:
+  active: true
+  version: 0.9.9
+project_generator_definitions:
+  version: 0.2.27

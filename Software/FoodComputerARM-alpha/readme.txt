@@ -43,6 +43,7 @@ Notes:
 -The program is far from perfect, bugs might exists. 
 -It was not written to look proper, yet.
 -The code may look ugly as it was coded using the glue method.
+-If the Raspberry Pi appears not to be stuck, add a 5 seconds delay after relay initialisation. Fault from: Modbus library.
 
 
 To-dos:
